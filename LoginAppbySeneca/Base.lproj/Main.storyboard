@@ -108,6 +108,9 @@
                                 <rect key="frame" x="144" y="421" width="87" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <segue destination="v3W-GI-kPX" kind="unwind" unwindAction="unwindSegueFor:" id="1fj-PQ-Tfp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QdM-lY-wUa"/>
@@ -126,6 +129,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJG-DM-zex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="v3W-GI-kPX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="842" y="131"/>
         </scene>
