@@ -36,6 +36,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
+                                    <action selector="loginButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1Z-ZW-XNl"/>
                                     <segue destination="e6W-FC-duC" kind="presentation" modalPresentationStyle="fullScreen" id="h8D-tm-X2J"/>
                                 </connections>
                             </button>
@@ -46,11 +47,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="118" height="28"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="Forgot User Name?"/>
+                                        <connections>
+                                            <action selector="remindUserName" destination="BYZ-38-t0r" eventType="touchUpInside" id="Okd-92-gxP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYz-IT-ygC">
                                         <rect key="frame" x="216" y="0.0" width="109" height="28"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="Forgot Password?"/>
+                                        <connections>
+                                            <action selector="remindPassword" destination="BYZ-38-t0r" eventType="touchUpInside" id="SrM-nO-7aX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -68,6 +75,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YTO-QJ-zQH" secondAttribute="bottom" constant="330" id="ziX-Fh-bdc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTF" destination="SEq-vq-6dX" id="Jzb-gy-cvP"/>
+                        <outlet property="userNameTF" destination="qc1-Tg-xjO" id="wQj-NO-GlM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,6 +121,9 @@
                             <constraint firstItem="PUE-hX-udI" firstAttribute="top" secondItem="SbF-er-rTs" secondAttribute="bottom" constant="42" id="sXB-ny-0d2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeVCLabel" destination="SbF-er-rTs" id="qpT-y2-82y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJG-DM-zex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
