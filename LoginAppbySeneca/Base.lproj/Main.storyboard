@@ -22,12 +22,12 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qc1-Tg-xjO">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SEq-vq-6dX">
                                         <rect key="frame" x="0.0" y="51" width="325" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -37,7 +37,7 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="loginButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1Z-ZW-XNl"/>
-                                    <segue destination="e6W-FC-duC" kind="presentation" modalPresentationStyle="fullScreen" id="h8D-tm-X2J"/>
+                                    <segue destination="e6W-FC-duC" kind="presentation" identifier="goToWelcomeVC" modalPresentationStyle="fullScreen" id="h8D-tm-X2J"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="YTO-QJ-zQH">
@@ -109,7 +109,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
-                                    <segue destination="v3W-GI-kPX" kind="unwind" unwindAction="unwindSegueFor:" id="1fj-PQ-Tfp"/>
+                                    <segue destination="v3W-GI-kPX" kind="unwind" unwindAction="unwindSegueFor:" id="ltc-c7-LFQ"/>
                                 </connections>
                             </button>
                         </subviews>
