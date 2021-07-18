@@ -11,8 +11,11 @@
 		048C7D9A269DF7A000FC0445 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C7D99269DF7A000FC0445 /* SceneDelegate.swift */; };
 		048C7D9C269DF7A000FC0445 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C7D9B269DF7A000FC0445 /* LoginViewController.swift */; };
 		048C7D9F269DF7A000FC0445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048C7D9D269DF7A000FC0445 /* Main.storyboard */; };
-		048C7DA4269DF7A300FC0445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048C7DA2269DF7A300FC0445 /* LaunchScreen.storyboard */; };
 		048C7DAC269DF83000FC0445 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C7DAB269DF83000FC0445 /* WelcomeViewController.swift */; };
+		0493398726A33F9A00040ADD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493398626A33F9A00040ADD /* Model.swift */; };
+		0493399226A344F000040ADD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0493399126A344F000040ADD /* Media.xcassets */; };
+		0493399526A46F0A00040ADD /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493399426A46F0A00040ADD /* PersonInfoViewController.swift */; };
+		0493399726A46F3600040ADD /* VisualInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493399626A46F3600040ADD /* VisualInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +24,12 @@
 		048C7D99269DF7A000FC0445 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		048C7D9B269DF7A000FC0445 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		048C7D9E269DF7A000FC0445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		048C7DA3269DF7A300FC0445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048C7DA5269DF7A300FC0445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048C7DAB269DF83000FC0445 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		0493398626A33F9A00040ADD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0493399126A344F000040ADD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		0493399426A46F0A00040ADD /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		0493399626A46F3600040ADD /* VisualInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		048C7D96269DF7A000FC0445 /* LoginAppbySeneca */ = {
 			isa = PBXGroup;
 			children = (
-				048C7D97269DF7A000FC0445 /* AppDelegate.swift */,
-				048C7D99269DF7A000FC0445 /* SceneDelegate.swift */,
-				048C7D9B269DF7A000FC0445 /* LoginViewController.swift */,
-				048C7DAB269DF83000FC0445 /* WelcomeViewController.swift */,
-				048C7D9D269DF7A000FC0445 /* Main.storyboard */,
-				048C7DA2269DF7A300FC0445 /* LaunchScreen.storyboard */,
-				048C7DA5269DF7A300FC0445 /* Info.plist */,
+				0493398226A33F2D00040ADD /* ViewControllers */,
+				0493398826A33FA800040ADD /* Models */,
+				0493398326A33F4700040ADD /* Storyboards */,
+				0493398926A33FF100040ADD /* Support */,
+				0493399326A3453B00040ADD /* Resources */,
 			);
 			path = LoginAppbySeneca;
+			sourceTree = "<group>";
+		};
+		0493398226A33F2D00040ADD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				048C7D9B269DF7A000FC0445 /* LoginViewController.swift */,
+				048C7DAB269DF83000FC0445 /* WelcomeViewController.swift */,
+				0493399426A46F0A00040ADD /* PersonInfoViewController.swift */,
+				0493399626A46F3600040ADD /* VisualInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0493398326A33F4700040ADD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				048C7D9D269DF7A000FC0445 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0493398826A33FA800040ADD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0493398626A33F9A00040ADD /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0493398926A33FF100040ADD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				048C7D99269DF7A000FC0445 /* SceneDelegate.swift */,
+				048C7D97269DF7A000FC0445 /* AppDelegate.swift */,
+				048C7DA5269DF7A300FC0445 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0493399326A3453B00040ADD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0493399126A344F000040ADD /* Media.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048C7DA4269DF7A300FC0445 /* LaunchScreen.storyboard in Resources */,
+				0493399226A344F000040ADD /* Media.xcassets in Resources */,
 				048C7D9F269DF7A000FC0445 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0493399726A46F3600040ADD /* VisualInfoViewController.swift in Sources */,
+				0493398726A33F9A00040ADD /* Model.swift in Sources */,
+				0493399526A46F0A00040ADD /* PersonInfoViewController.swift in Sources */,
 				048C7D9C269DF7A000FC0445 /* LoginViewController.swift in Sources */,
 				048C7DAC269DF83000FC0445 /* WelcomeViewController.swift in Sources */,
 				048C7D98269DF7A000FC0445 /* AppDelegate.swift in Sources */,
@@ -152,14 +204,6 @@
 				048C7D9E269DF7A000FC0445 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		048C7DA2269DF7A300FC0445 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				048C7DA3269DF7A300FC0445 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -287,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LoginAppbySeneca/Info.plist;
+				INFOPLIST_FILE = LoginAppbySeneca/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LoginAppbySeneca/Info.plist;
+				INFOPLIST_FILE = LoginAppbySeneca/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

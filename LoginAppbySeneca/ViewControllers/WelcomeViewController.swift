@@ -11,14 +11,12 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet var welcomeVCLabel: UILabel!
     
-    var welcomeName = ""
+    var welcomeName: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeVCLabel.text = "Welcome, \(welcomeName)!"
+        welcomeVCLabel.text = "Welcome, \(welcomeName.person.name) \(welcomeName.person.surname)!"
         view.backgroundColor = .orange
     }
-    
-    
-    
 }
+
