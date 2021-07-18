@@ -13,9 +13,9 @@
 		048C7D9F269DF7A000FC0445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048C7D9D269DF7A000FC0445 /* Main.storyboard */; };
 		048C7DAC269DF83000FC0445 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C7DAB269DF83000FC0445 /* WelcomeViewController.swift */; };
 		0493398726A33F9A00040ADD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493398626A33F9A00040ADD /* Model.swift */; };
-		0493399226A344F000040ADD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0493399126A344F000040ADD /* Media.xcassets */; };
 		0493399526A46F0A00040ADD /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493399426A46F0A00040ADD /* PersonInfoViewController.swift */; };
 		0493399726A46F3600040ADD /* VisualInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493399626A46F3600040ADD /* VisualInfoViewController.swift */; };
+		0493399926A4A40400040ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0493399826A4A40400040ADD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		048C7DA5269DF7A300FC0445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048C7DAB269DF83000FC0445 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0493398626A33F9A00040ADD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		0493399126A344F000040ADD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		0493399426A46F0A00040ADD /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		0493399626A46F3600040ADD /* VisualInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualInfoViewController.swift; sourceTree = "<group>"; };
+		0493399826A4A40400040ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../TrafficLights/TrafficLights/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 		0493399326A3453B00040ADD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0493399126A344F000040ADD /* Media.xcassets */,
+				0493399826A4A40400040ADD /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0493399226A344F000040ADD /* Media.xcassets in Resources */,
+				0493399926A4A40400040ADD /* Assets.xcassets in Resources */,
 				048C7D9F269DF7A000FC0445 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
